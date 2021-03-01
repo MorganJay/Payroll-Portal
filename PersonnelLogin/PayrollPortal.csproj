@@ -1,0 +1,788 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C11F7C3-EBFC-436D-920C-9613E3A87C00}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PersonnelLogin</RootNamespace>
+    <AssemblyName>PersonnelLogin</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankDataReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankDataReport.Designer.cs">
+      <DependentUpon>BankDataReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BankDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankDataView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankDataView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Banks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banks.Designer.cs">
+      <DependentUpon>Banks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateYourPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateYourPassword.Designer.cs">
+      <DependentUpon>CreateYourPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department.Designer.cs">
+      <DependentUpon>Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DepartmentDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmentReport.Designer.cs">
+      <DependentUpon>DepartmentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DepartmentView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeBiodata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeBiodata.Designer.cs">
+      <DependentUpon>EmployeeBiodata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeView.cs">
+      <DependentUpon>EmployeeView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EReporrt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EReporrt.Designer.cs">
+      <DependentUpon>EReporrt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JobDescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobDescription.Designer.cs">
+      <DependentUpon>JobDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobDescriptionReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobDescriptionReport.Designer.cs">
+      <DependentUpon>JobDescriptionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobDescriptionView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobDescriptionView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogInDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogInDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogInDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogInDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogInDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogInDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogInDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogInDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogInDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogInDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogInDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollPortalWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayrollPortalWindow.Designer.cs">
+      <DependentUpon>PayrollPortalWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollSlipReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayrollSlipReport.Designer.cs">
+      <DependentUpon>PayrollSlipReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayrollTable.Designer.cs">
+      <DependentUpon>PayrollTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollTableReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayrollTableReport.Designer.cs">
+      <DependentUpon>PayrollTableReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollTableView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PayrollTableView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayrollTransaction.Designer.cs">
+      <DependentUpon>PayrollTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollTransactionReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayrollTransactionReport.Designer.cs">
+      <DependentUpon>PayrollTransactionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollTransactionView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PayrollTransactionView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PFADataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PFADataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PFAReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PFAReport.Designer.cs">
+      <DependentUpon>PFAReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PFAtable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PFAtable.Designer.cs">
+      <DependentUpon>PFAtable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PFAView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PFAView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PTDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StartANewMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartANewMonth.Designer.cs">
+      <DependentUpon>StartANewMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatesReport.Designer.cs">
+      <DependentUpon>StatesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatesDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatesDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StatesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatesForm.Designer.cs">
+      <DependentUpon>StatesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatesView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatesView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StatutoryDataSet5.cs">
+      <DependentUpon>StatutoryDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StatutoryDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatutoryDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StatutoryDeduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatutoryDeduction.Designer.cs">
+      <DependentUpon>StatutoryDeduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatutoryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatutoryReport.Designer.cs">
+      <DependentUpon>StatutoryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatutoryView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatutoryView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SystemDefaults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemDefaults.Designer.cs">
+      <DependentUpon>SystemDefaults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemDefaultsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemDefaultsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionReport.Designer.cs">
+      <DependentUpon>TransactionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionType.Designer.cs">
+      <DependentUpon>TransactionType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionTypeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransactionTypeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionTypeView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransactionTypeView.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BankDataReport.resx">
+      <DependentUpon>BankDataReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banks.resx">
+      <DependentUpon>Banks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateYourPassword.resx">
+      <DependentUpon>CreateYourPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department.resx">
+      <DependentUpon>Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentReport.resx">
+      <DependentUpon>DepartmentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeBiodata.resx">
+      <DependentUpon>EmployeeBiodata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EReporrt.resx">
+      <DependentUpon>EReporrt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobDescription.resx">
+      <DependentUpon>JobDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobDescriptionReport.resx">
+      <DependentUpon>JobDescriptionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollPortalWindow.resx">
+      <DependentUpon>PayrollPortalWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollSlipReport.resx">
+      <DependentUpon>PayrollSlipReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollTable.resx">
+      <DependentUpon>PayrollTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollTableReport.resx">
+      <DependentUpon>PayrollTableReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollTransaction.resx">
+      <DependentUpon>PayrollTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollTransactionReport.resx">
+      <DependentUpon>PayrollTransactionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PFAReport.resx">
+      <DependentUpon>PFAReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PFAtable.resx">
+      <DependentUpon>PFAtable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PtReport.rdlc" />
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report10.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Report5.rdlc" />
+    <EmbeddedResource Include="Report6.rdlc" />
+    <EmbeddedResource Include="Report7.rdlc" />
+    <EmbeddedResource Include="Report8.rdlc" />
+    <EmbeddedResource Include="Report9.rdlc" />
+    <EmbeddedResource Include="ReportState.rdlc" />
+    <EmbeddedResource Include="StartANewMonth.resx">
+      <DependentUpon>StartANewMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatesReport.resx">
+      <DependentUpon>StatesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatesForm.resx">
+      <DependentUpon>StatesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatutoryDeduction.resx">
+      <DependentUpon>StatutoryDeduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatutoryReport.resx">
+      <DependentUpon>StatutoryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemDefaults.resx">
+      <DependentUpon>SystemDefaults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionReport.resx">
+      <DependentUpon>TransactionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionType.resx">
+      <DependentUpon>TransactionType.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BankDataSet5.xsc">
+      <DependentUpon>BankDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BankDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankDataSet5.xss">
+      <DependentUpon>BankDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BankDataView.xsc">
+      <DependentUpon>BankDataView.xsd</DependentUpon>
+    </None>
+    <None Include="BankDataView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankDataView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankDataView.xss">
+      <DependentUpon>BankDataView.xsd</DependentUpon>
+    </None>
+    <None Include="DepartmentDataSet5.xsc">
+      <DependentUpon>DepartmentDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DepartmentDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DepartmentDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DepartmentDataSet5.xss">
+      <DependentUpon>DepartmentDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DepartmentView.xsc">
+      <DependentUpon>DepartmentView.xsd</DependentUpon>
+    </None>
+    <None Include="DepartmentView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DepartmentView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DepartmentView.xss">
+      <DependentUpon>DepartmentView.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeView.xsc">
+      <DependentUpon>EmployeeView.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeView.xss">
+      <DependentUpon>EmployeeView.xsd</DependentUpon>
+    </None>
+    <None Include="JobDataSet4.xsc">
+      <DependentUpon>JobDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="JobDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JobDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JobDataSet4.xss">
+      <DependentUpon>JobDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="JobDescriptionView.xsc">
+      <DependentUpon>JobDescriptionView.xsd</DependentUpon>
+    </None>
+    <None Include="JobDescriptionView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JobDescriptionView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JobDescriptionView.xss">
+      <DependentUpon>JobDescriptionView.xsd</DependentUpon>
+    </None>
+    <None Include="LogInDataSet.xsc">
+      <DependentUpon>LogInDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LogInDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogInDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LogInDataSet.xss">
+      <DependentUpon>LogInDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LogInDataSet1.xsc">
+      <DependentUpon>LogInDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LogInDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogInDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LogInDataSet1.xss">
+      <DependentUpon>LogInDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LogInDataSet2.xsc">
+      <DependentUpon>LogInDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LogInDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogInDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LogInDataSet2.xss">
+      <DependentUpon>LogInDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LogInDataSet3.xsc">
+      <DependentUpon>LogInDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="LogInDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogInDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LogInDataSet3.xss">
+      <DependentUpon>LogInDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="LogInDataSet4.xsc">
+      <DependentUpon>LogInDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LogInDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogInDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LogInDataSet4.xss">
+      <DependentUpon>LogInDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LogInDataSet6.xsc">
+      <DependentUpon>LogInDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="LogInDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogInDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LogInDataSet6.xss">
+      <DependentUpon>LogInDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PayrollTableView.xsc">
+      <DependentUpon>PayrollTableView.xsd</DependentUpon>
+    </None>
+    <None Include="PayrollTableView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PayrollTableView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PayrollTableView.xss">
+      <DependentUpon>PayrollTableView.xsd</DependentUpon>
+    </None>
+    <None Include="PayrollTransactionView.xsc">
+      <DependentUpon>PayrollTransactionView.xsd</DependentUpon>
+    </None>
+    <None Include="PayrollTransactionView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PayrollTransactionView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PayrollTransactionView.xss">
+      <DependentUpon>PayrollTransactionView.xsd</DependentUpon>
+    </None>
+    <None Include="PFADataSet5.xsc">
+      <DependentUpon>PFADataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PFADataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PFADataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PFADataSet5.xss">
+      <DependentUpon>PFADataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PFAView.xsc">
+      <DependentUpon>PFAView.xsd</DependentUpon>
+    </None>
+    <None Include="PFAView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PFAView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PFAView.xss">
+      <DependentUpon>PFAView.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="PTDataSet.xsc">
+      <DependentUpon>PTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PTDataSet.xss">
+      <DependentUpon>PTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StatesDataSet5.xsc">
+      <DependentUpon>StatesDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="StatesDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatesDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StatesDataSet5.xss">
+      <DependentUpon>StatesDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="StatesView.xsc">
+      <DependentUpon>StatesView.xsd</DependentUpon>
+    </None>
+    <None Include="StatesView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatesView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StatesView.xss">
+      <DependentUpon>StatesView.xsd</DependentUpon>
+    </None>
+    <None Include="StatutoryDataSet5.xsc">
+      <DependentUpon>StatutoryDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="StatutoryDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatutoryDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StatutoryDataSet5.xss">
+      <DependentUpon>StatutoryDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="StatutoryView.xsc">
+      <DependentUpon>StatutoryView.xsd</DependentUpon>
+    </None>
+    <None Include="StatutoryView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatutoryView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StatutoryView.xss">
+      <DependentUpon>StatutoryView.xsd</DependentUpon>
+    </None>
+    <None Include="SystemDefaultsDataSet.xsc">
+      <DependentUpon>SystemDefaultsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SystemDefaultsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystemDefaultsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SystemDefaultsDataSet.xss">
+      <DependentUpon>SystemDefaultsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TransactionTypeDataSet.xsc">
+      <DependentUpon>TransactionTypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TransactionTypeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TransactionTypeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TransactionTypeDataSet.xss">
+      <DependentUpon>TransactionTypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TransactionTypeView.xsc">
+      <DependentUpon>TransactionTypeView.xsd</DependentUpon>
+    </None>
+    <None Include="TransactionTypeView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TransactionTypeView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TransactionTypeView.xss">
+      <DependentUpon>TransactionTypeView.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

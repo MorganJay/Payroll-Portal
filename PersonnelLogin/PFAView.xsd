@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PFAView" targetNamespace="http://tempuri.org/PFAView.xsd" xmlns:mstns="http://tempuri.org/PFAView.xsd" xmlns="http://tempuri.org/PFAView.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LogInConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LogInConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PersonnelLogin.Properties.Settings.GlobalReference.Default.LogInConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_PFATableAdapter" GeneratorDataComponentClassName="View_PFATableAdapter" Name="View_PFA" UserDataComponentName="View_PFATableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LogInConnectionString (Settings)" DbObjectName="LogIn.dbo.View_PFA" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PFAId, PFAName, PFAAddress, PFAAccount, CompanyName FROM dbo.View_PFA</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PFAId" DataSetColumn="PFAId" />
+              <Mapping SourceColumn="PFAName" DataSetColumn="PFAName" />
+              <Mapping SourceColumn="PFAAddress" DataSetColumn="PFAAddress" />
+              <Mapping SourceColumn="PFAAccount" DataSetColumn="PFAAccount" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PFAView" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PFAView" msprop:Generator_UserDSName="PFAView">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_PFA" msprop:Generator_TableClassName="View_PFADataTable" msprop:Generator_TableVarName="tableView_PFA" msprop:Generator_TablePropName="View_PFA" msprop:Generator_RowDeletingName="View_PFARowDeleting" msprop:Generator_RowChangingName="View_PFARowChanging" msprop:Generator_RowEvHandlerName="View_PFARowChangeEventHandler" msprop:Generator_RowDeletedName="View_PFARowDeleted" msprop:Generator_UserTableName="View_PFA" msprop:Generator_RowChangedName="View_PFARowChanged" msprop:Generator_RowEvArgName="View_PFARowChangeEvent" msprop:Generator_RowClassName="View_PFARow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PFAId" msprop:Generator_ColumnVarNameInTable="columnPFAId" msprop:Generator_ColumnPropNameInRow="PFAId" msprop:Generator_ColumnPropNameInTable="PFAIdColumn" msprop:Generator_UserColumnName="PFAId">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PFAName" msprop:Generator_ColumnVarNameInTable="columnPFAName" msprop:Generator_ColumnPropNameInRow="PFAName" msprop:Generator_ColumnPropNameInTable="PFANameColumn" msprop:Generator_UserColumnName="PFAName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PFAAddress" msprop:Generator_ColumnVarNameInTable="columnPFAAddress" msprop:Generator_ColumnPropNameInRow="PFAAddress" msprop:Generator_ColumnPropNameInTable="PFAAddressColumn" msprop:Generator_UserColumnName="PFAAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PFAAccount" msprop:Generator_ColumnVarNameInTable="columnPFAAccount" msprop:Generator_ColumnPropNameInRow="PFAAccount" msprop:Generator_ColumnPropNameInTable="PFAAccountColumn" msprop:Generator_UserColumnName="PFAAccount" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_PFA" />
+      <xs:field xpath="mstns:PFAId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

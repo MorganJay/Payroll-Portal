@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PayrollTableView" targetNamespace="http://tempuri.org/PayrollTableView.xsd" xmlns:mstns="http://tempuri.org/PayrollTableView.xsd" xmlns="http://tempuri.org/PayrollTableView.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LogInConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LogInConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PersonnelLogin.Properties.Settings.GlobalReference.Default.LogInConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_PayrollTableTableAdapter" GeneratorDataComponentClassName="View_PayrollTableTableAdapter" Name="View_PayrollTable" UserDataComponentName="View_PayrollTableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LogInConnectionString (Settings)" DbObjectName="LogIn.dbo.View_PayrollTable" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT StaffID, SalaryPeriod, DaysWorked, AbsentDays, GrossSalary, Deduction, NetSalary, BankCode, AccountNumber, CompanyName FROM dbo.View_PayrollTable</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="StaffID" DataSetColumn="StaffID" />
+              <Mapping SourceColumn="SalaryPeriod" DataSetColumn="SalaryPeriod" />
+              <Mapping SourceColumn="DaysWorked" DataSetColumn="DaysWorked" />
+              <Mapping SourceColumn="AbsentDays" DataSetColumn="AbsentDays" />
+              <Mapping SourceColumn="GrossSalary" DataSetColumn="GrossSalary" />
+              <Mapping SourceColumn="Deduction" DataSetColumn="Deduction" />
+              <Mapping SourceColumn="NetSalary" DataSetColumn="NetSalary" />
+              <Mapping SourceColumn="BankCode" DataSetColumn="BankCode" />
+              <Mapping SourceColumn="AccountNumber" DataSetColumn="AccountNumber" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PayrollTableView" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PayrollTableView" msprop:Generator_UserDSName="PayrollTableView">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_PayrollTable" msprop:Generator_TableClassName="View_PayrollTableDataTable" msprop:Generator_TableVarName="tableView_PayrollTable" msprop:Generator_TablePropName="View_PayrollTable" msprop:Generator_RowDeletingName="View_PayrollTableRowDeleting" msprop:Generator_RowChangingName="View_PayrollTableRowChanging" msprop:Generator_RowEvHandlerName="View_PayrollTableRowChangeEventHandler" msprop:Generator_RowDeletedName="View_PayrollTableRowDeleted" msprop:Generator_UserTableName="View_PayrollTable" msprop:Generator_RowChangedName="View_PayrollTableRowChanged" msprop:Generator_RowEvArgName="View_PayrollTableRowChangeEvent" msprop:Generator_RowClassName="View_PayrollTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StaffID" msprop:Generator_ColumnVarNameInTable="columnStaffID" msprop:Generator_ColumnPropNameInRow="StaffID" msprop:Generator_ColumnPropNameInTable="StaffIDColumn" msprop:Generator_UserColumnName="StaffID" type="xs:int" />
+              <xs:element name="SalaryPeriod" msprop:Generator_ColumnVarNameInTable="columnSalaryPeriod" msprop:Generator_ColumnPropNameInRow="SalaryPeriod" msprop:Generator_ColumnPropNameInTable="SalaryPeriodColumn" msprop:Generator_UserColumnName="SalaryPeriod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DaysWorked" msprop:Generator_ColumnVarNameInTable="columnDaysWorked" msprop:Generator_ColumnPropNameInRow="DaysWorked" msprop:Generator_ColumnPropNameInTable="DaysWorkedColumn" msprop:Generator_UserColumnName="DaysWorked" type="xs:int" minOccurs="0" />
+              <xs:element name="AbsentDays" msprop:Generator_ColumnVarNameInTable="columnAbsentDays" msprop:Generator_ColumnPropNameInRow="AbsentDays" msprop:Generator_ColumnPropNameInTable="AbsentDaysColumn" msprop:Generator_UserColumnName="AbsentDays" type="xs:int" minOccurs="0" />
+              <xs:element name="GrossSalary" msprop:Generator_ColumnVarNameInTable="columnGrossSalary" msprop:Generator_ColumnPropNameInRow="GrossSalary" msprop:Generator_ColumnPropNameInTable="GrossSalaryColumn" msprop:Generator_UserColumnName="GrossSalary" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deduction" msprop:Generator_ColumnVarNameInTable="columnDeduction" msprop:Generator_ColumnPropNameInRow="Deduction" msprop:Generator_ColumnPropNameInTable="DeductionColumn" msprop:Generator_UserColumnName="Deduction" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NetSalary" msprop:Generator_ColumnVarNameInTable="columnNetSalary" msprop:Generator_ColumnPropNameInRow="NetSalary" msprop:Generator_ColumnPropNameInTable="NetSalaryColumn" msprop:Generator_UserColumnName="NetSalary" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BankCode" msprop:Generator_ColumnVarNameInTable="columnBankCode" msprop:Generator_ColumnPropNameInRow="BankCode" msprop:Generator_ColumnPropNameInTable="BankCodeColumn" msprop:Generator_UserColumnName="BankCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountNumber" msprop:Generator_ColumnVarNameInTable="columnAccountNumber" msprop:Generator_ColumnPropNameInRow="AccountNumber" msprop:Generator_ColumnPropNameInTable="AccountNumberColumn" msprop:Generator_UserColumnName="AccountNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_PayrollTable" />
+      <xs:field xpath="mstns:StaffID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

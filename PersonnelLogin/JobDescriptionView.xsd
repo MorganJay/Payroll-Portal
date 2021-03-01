@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="JobDescriptionView" targetNamespace="http://tempuri.org/JobDescriptionView.xsd" xmlns:mstns="http://tempuri.org/JobDescriptionView.xsd" xmlns="http://tempuri.org/JobDescriptionView.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LogInConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LogInConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PersonnelLogin.Properties.Settings.GlobalReference.Default.LogInConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_JobDescriptionTableAdapter" GeneratorDataComponentClassName="View_JobDescriptionTableAdapter" Name="View_JobDescription" UserDataComponentName="View_JobDescriptionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LogInConnectionString (Settings)" DbObjectName="LogIn.dbo.View_JobDescription" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT JobCode, JobDesc, BasicSalary, HousingAllowance, TransportationAllowance, CompanyName FROM dbo.View_JobDescription</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="JobCode" DataSetColumn="JobCode" />
+              <Mapping SourceColumn="JobDesc" DataSetColumn="JobDesc" />
+              <Mapping SourceColumn="BasicSalary" DataSetColumn="BasicSalary" />
+              <Mapping SourceColumn="HousingAllowance" DataSetColumn="HousingAllowance" />
+              <Mapping SourceColumn="TransportationAllowance" DataSetColumn="TransportationAllowance" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="JobDescriptionView" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="JobDescriptionView" msprop:Generator_UserDSName="JobDescriptionView">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_JobDescription" msprop:Generator_TableClassName="View_JobDescriptionDataTable" msprop:Generator_TableVarName="tableView_JobDescription" msprop:Generator_TablePropName="View_JobDescription" msprop:Generator_RowDeletingName="View_JobDescriptionRowDeleting" msprop:Generator_RowChangingName="View_JobDescriptionRowChanging" msprop:Generator_RowEvHandlerName="View_JobDescriptionRowChangeEventHandler" msprop:Generator_RowDeletedName="View_JobDescriptionRowDeleted" msprop:Generator_UserTableName="View_JobDescription" msprop:Generator_RowChangedName="View_JobDescriptionRowChanged" msprop:Generator_RowEvArgName="View_JobDescriptionRowChangeEvent" msprop:Generator_RowClassName="View_JobDescriptionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JobCode" msprop:Generator_ColumnVarNameInTable="columnJobCode" msprop:Generator_ColumnPropNameInRow="JobCode" msprop:Generator_ColumnPropNameInTable="JobCodeColumn" msprop:Generator_UserColumnName="JobCode" type="xs:int" />
+              <xs:element name="JobDesc" msprop:Generator_ColumnVarNameInTable="columnJobDesc" msprop:Generator_ColumnPropNameInRow="JobDesc" msprop:Generator_ColumnPropNameInTable="JobDescColumn" msprop:Generator_UserColumnName="JobDesc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BasicSalary" msprop:Generator_ColumnVarNameInTable="columnBasicSalary" msprop:Generator_ColumnPropNameInRow="BasicSalary" msprop:Generator_ColumnPropNameInTable="BasicSalaryColumn" msprop:Generator_UserColumnName="BasicSalary" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HousingAllowance" msprop:Generator_ColumnVarNameInTable="columnHousingAllowance" msprop:Generator_ColumnPropNameInRow="HousingAllowance" msprop:Generator_ColumnPropNameInTable="HousingAllowanceColumn" msprop:Generator_UserColumnName="HousingAllowance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TransportationAllowance" msprop:Generator_ColumnVarNameInTable="columnTransportationAllowance" msprop:Generator_ColumnPropNameInRow="TransportationAllowance" msprop:Generator_ColumnPropNameInTable="TransportationAllowanceColumn" msprop:Generator_UserColumnName="TransportationAllowance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_JobDescription" />
+      <xs:field xpath="mstns:JobCode" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

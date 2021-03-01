@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StatutoryView" targetNamespace="http://tempuri.org/StatutoryView.xsd" xmlns:mstns="http://tempuri.org/StatutoryView.xsd" xmlns="http://tempuri.org/StatutoryView.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LogInConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LogInConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PersonnelLogin.Properties.Settings.GlobalReference.Default.LogInConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_StatutoryTableAdapter" GeneratorDataComponentClassName="View_StatutoryTableAdapter" Name="View_Statutory" UserDataComponentName="View_StatutoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LogInConnectionString (Settings)" DbObjectName="LogIn.dbo.View_Statutory" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT StatutoryTypeID, StaffID, Amount1, Amount2, PFAId, PFAAccountNumber, CompanyName FROM dbo.View_Statutory</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="StatutoryTypeID" DataSetColumn="StatutoryTypeID" />
+              <Mapping SourceColumn="StaffID" DataSetColumn="StaffID" />
+              <Mapping SourceColumn="Amount1" DataSetColumn="Amount1" />
+              <Mapping SourceColumn="Amount2" DataSetColumn="Amount2" />
+              <Mapping SourceColumn="PFAId" DataSetColumn="PFAId" />
+              <Mapping SourceColumn="PFAAccountNumber" DataSetColumn="PFAAccountNumber" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StatutoryView" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="StatutoryView" msprop:Generator_UserDSName="StatutoryView">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Statutory" msprop:Generator_TableClassName="View_StatutoryDataTable" msprop:Generator_TableVarName="tableView_Statutory" msprop:Generator_TablePropName="View_Statutory" msprop:Generator_RowDeletingName="View_StatutoryRowDeleting" msprop:Generator_RowChangingName="View_StatutoryRowChanging" msprop:Generator_RowEvHandlerName="View_StatutoryRowChangeEventHandler" msprop:Generator_RowDeletedName="View_StatutoryRowDeleted" msprop:Generator_UserTableName="View_Statutory" msprop:Generator_RowChangedName="View_StatutoryRowChanged" msprop:Generator_RowEvArgName="View_StatutoryRowChangeEvent" msprop:Generator_RowClassName="View_StatutoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StatutoryTypeID" msprop:Generator_ColumnVarNameInTable="columnStatutoryTypeID" msprop:Generator_ColumnPropNameInRow="StatutoryTypeID" msprop:Generator_ColumnPropNameInTable="StatutoryTypeIDColumn" msprop:Generator_UserColumnName="StatutoryTypeID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StaffID" msprop:Generator_ColumnVarNameInTable="columnStaffID" msprop:Generator_ColumnPropNameInRow="StaffID" msprop:Generator_ColumnPropNameInTable="StaffIDColumn" msprop:Generator_UserColumnName="StaffID" type="xs:int" minOccurs="0" />
+              <xs:element name="Amount1" msprop:Generator_ColumnVarNameInTable="columnAmount1" msprop:Generator_ColumnPropNameInRow="Amount1" msprop:Generator_ColumnPropNameInTable="Amount1Column" msprop:Generator_UserColumnName="Amount1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount2" msprop:Generator_ColumnVarNameInTable="columnAmount2" msprop:Generator_ColumnPropNameInRow="Amount2" msprop:Generator_ColumnPropNameInTable="Amount2Column" msprop:Generator_UserColumnName="Amount2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PFAId" msprop:Generator_ColumnVarNameInTable="columnPFAId" msprop:Generator_ColumnPropNameInRow="PFAId" msprop:Generator_ColumnPropNameInTable="PFAIdColumn" msprop:Generator_UserColumnName="PFAId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PFAAccountNumber" msprop:Generator_ColumnVarNameInTable="columnPFAAccountNumber" msprop:Generator_ColumnPropNameInRow="PFAAccountNumber" msprop:Generator_ColumnPropNameInTable="PFAAccountNumberColumn" msprop:Generator_UserColumnName="PFAAccountNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_Statutory" />
+      <xs:field xpath="mstns:StatutoryTypeID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LogInDataSet3" targetNamespace="http://tempuri.org/LogInDataSet3.xsd" xmlns:mstns="http://tempuri.org/LogInDataSet3.xsd" xmlns="http://tempuri.org/LogInDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LogInConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LogInConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PersonnelLogin.Properties.Settings.GlobalReference.Default.LogInConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_PayrollSlipTableAdapter" GeneratorDataComponentClassName="View_PayrollSlipTableAdapter" Name="View_PayrollSlip" UserDataComponentName="View_PayrollSlipTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LogInConnectionString (Settings)" DbObjectName="LogIn.dbo.View_PayrollSlip" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT StaffID, BasicSalary, HousingAllowance, TransportationAllowance, OtherAllowance, GrossSalary, NetSalary, TotalDeduction, Surname, CompanyName FROM dbo.View_PayrollSlip</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="StaffID" DataSetColumn="StaffID" />
+              <Mapping SourceColumn="BasicSalary" DataSetColumn="BasicSalary" />
+              <Mapping SourceColumn="HousingAllowance" DataSetColumn="HousingAllowance" />
+              <Mapping SourceColumn="TransportationAllowance" DataSetColumn="TransportationAllowance" />
+              <Mapping SourceColumn="OtherAllowance" DataSetColumn="OtherAllowance" />
+              <Mapping SourceColumn="GrossSalary" DataSetColumn="GrossSalary" />
+              <Mapping SourceColumn="NetSalary" DataSetColumn="NetSalary" />
+              <Mapping SourceColumn="TotalDeduction" DataSetColumn="TotalDeduction" />
+              <Mapping SourceColumn="Surname" DataSetColumn="Surname" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LogInDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LogInDataSet3" msprop:Generator_UserDSName="LogInDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_PayrollSlip" msprop:Generator_TableClassName="View_PayrollSlipDataTable" msprop:Generator_TableVarName="tableView_PayrollSlip" msprop:Generator_RowChangedName="View_PayrollSlipRowChanged" msprop:Generator_TablePropName="View_PayrollSlip" msprop:Generator_RowDeletingName="View_PayrollSlipRowDeleting" msprop:Generator_RowChangingName="View_PayrollSlipRowChanging" msprop:Generator_RowEvHandlerName="View_PayrollSlipRowChangeEventHandler" msprop:Generator_RowDeletedName="View_PayrollSlipRowDeleted" msprop:Generator_RowClassName="View_PayrollSlipRow" msprop:Generator_UserTableName="View_PayrollSlip" msprop:Generator_RowEvArgName="View_PayrollSlipRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StaffID" msprop:Generator_ColumnVarNameInTable="columnStaffID" msprop:Generator_ColumnPropNameInRow="StaffID" msprop:Generator_ColumnPropNameInTable="StaffIDColumn" msprop:Generator_UserColumnName="StaffID" type="xs:int" />
+              <xs:element name="BasicSalary" msprop:Generator_ColumnVarNameInTable="columnBasicSalary" msprop:Generator_ColumnPropNameInRow="BasicSalary" msprop:Generator_ColumnPropNameInTable="BasicSalaryColumn" msprop:Generator_UserColumnName="BasicSalary" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HousingAllowance" msprop:Generator_ColumnVarNameInTable="columnHousingAllowance" msprop:Generator_ColumnPropNameInRow="HousingAllowance" msprop:Generator_ColumnPropNameInTable="HousingAllowanceColumn" msprop:Generator_UserColumnName="HousingAllowance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TransportationAllowance" msprop:Generator_ColumnVarNameInTable="columnTransportationAllowance" msprop:Generator_ColumnPropNameInRow="TransportationAllowance" msprop:Generator_ColumnPropNameInTable="TransportationAllowanceColumn" msprop:Generator_UserColumnName="TransportationAllowance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OtherAllowance" msprop:Generator_ColumnVarNameInTable="columnOtherAllowance" msprop:Generator_ColumnPropNameInRow="OtherAllowance" msprop:Generator_ColumnPropNameInTable="OtherAllowanceColumn" msprop:Generator_UserColumnName="OtherAllowance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GrossSalary" msprop:Generator_ColumnVarNameInTable="columnGrossSalary" msprop:Generator_ColumnPropNameInRow="GrossSalary" msprop:Generator_ColumnPropNameInTable="GrossSalaryColumn" msprop:Generator_UserColumnName="GrossSalary" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NetSalary" msprop:Generator_ColumnVarNameInTable="columnNetSalary" msprop:Generator_ColumnPropNameInRow="NetSalary" msprop:Generator_ColumnPropNameInTable="NetSalaryColumn" msprop:Generator_UserColumnName="NetSalary" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalDeduction" msprop:Generator_ColumnVarNameInTable="columnTotalDeduction" msprop:Generator_ColumnPropNameInRow="TotalDeduction" msprop:Generator_ColumnPropNameInTable="TotalDeductionColumn" msprop:Generator_UserColumnName="TotalDeduction" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Surname" msprop:Generator_ColumnVarNameInTable="columnSurname" msprop:Generator_ColumnPropNameInRow="Surname" msprop:Generator_ColumnPropNameInTable="SurnameColumn" msprop:Generator_UserColumnName="Surname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_PayrollSlip" />
+      <xs:field xpath="mstns:StaffID" />
+    </xs:unique>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:View_PayrollSlip" />
+      <xs:field xpath="mstns:Surname" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
